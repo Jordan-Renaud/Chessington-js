@@ -23,7 +23,7 @@ export default class Pawn extends Piece {
       ];
     }
 
-    //handle all other moves
+    //handle all other moves, when its not caputures piece
     if (this.player === Player.WHITE) {
       return [Square.at(location.row + 1, location.col)];
     } else {
